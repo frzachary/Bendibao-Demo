@@ -1,0 +1,26 @@
+<!--Pages/profile/profile.wxml-->
+<view class='content'>
+  <!--头像样式-->
+  <view class='avatar'>
+    <image src='/assets/images/avatar.png'></image>
+  </view>
+  <!--信息列表-->
+  <view class='divider'></view>
+  <view wx:for='{{material}}'class='cell'>
+    <navigator  class='cell-item arrow'>
+      <text>{{item}}</text>
+    </navigator>
+  </view>
+  <!--问题列表-->
+  <view class='divider'></view>
+  <view wx:for='{{clause}}'class='cell'>
+    <navigator  class='cell-item arrow'>
+      <text>{{item}}</text>
+    </navigator>
+  </view>
+  <!--设置-->
+  <view class='divider'></view>
+  <navigator class='cell-item arrow cell'>
+    <text>设置</text>
+  </navigator>
+</view>

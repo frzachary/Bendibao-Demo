@@ -1,0 +1,7 @@
+<!--Pages/message/message.wxml-->
+<view class='card'>
+  <text>个人简历</text>
+  <text>最后一次更新：2018/8/10</text>
+  <image></image>
+  <text></text>
+</view>

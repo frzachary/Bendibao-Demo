@@ -1,0 +1,28 @@
+<!--Pages/home/home.wxml-->
+<view class='content'>
+  <!--图片轮播-->
+  <view>
+    <swiper indicator-dots='true' autoplay="true" interval="5000" duration="500">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150" mode='aspectFill' lazy-load='' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!--商品显示-->
+  <view class='icons-zone'>
+    <navigator wx:for='{{ boards }}'wx:key='id' url='/Pages/list/list?cat={{item.id}}&title={{item.name}}' class='board-item bdr'>
+      <image src='{{item.icon}}' lazy-load=''></image>
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <!--分割线-->
+  <view class='divider'></view>
+  <!---入口分区-->
+  <view class='index-enter'>
+    <navigator wx:for='{{inlet}}' class='enter-item' hover-class="none">
+      <image src='{{item}}'></image>
+    </navigator>
+  </view>
+</view>

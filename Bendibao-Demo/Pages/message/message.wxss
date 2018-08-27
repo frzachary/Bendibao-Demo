@@ -1,0 +1,28 @@
+/* Pages/message/message.wxss */
+
+page {
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20rpx;
+  margin: 60rpx 20rpx;
+  padding: 20rpx 35rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 20rpx;
+}
+
+.card-date {
+  font-size: 14px;
+  color: #ccc;
+  border-bottom: 1rpx solid #ddd;
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "Pages/home/home",
+    "Pages/message/message",
+    "Pages/profile/profile",
+    
+    "Pages/list/list"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#00b2ee",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "本地宝Demo",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "Pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabs/home.png",
+        "selectedIconPath": "assets/tabs/home-active.png"
+      },
+      {
+        "pagePath": "Pages/message/message",
+        "text": "信息",
+        "iconPath": "assets/tabs/message.png",
+        "selectedIconPath": "assets/tabs/message-active.png"
+      },
+      {
+        "pagePath": "Pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/tabs/profile.png",
+        "selectedIconPath": "assets/tabs/profile-active.png"
+      }
+     
+    ]
+  }
+}

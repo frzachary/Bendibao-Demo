@@ -1,0 +1,21 @@
+<!--Pages/list/list.wxml-->
+<!--商品和商铺页面-->
+<view class='shop' wx:for='{{shopList}}' wx:key='id'>
+  <!--图片展示区-->
+  <image class='shop-img' src="{{item.images [0]}}" lazy-load=''></image>
+  <!--店铺信息:名字，电话，地址，营业时间-->
+  <view class='shop-info'>
+    <text class='shop-title ell'>{{item.name}}</text>
+    <text class='shop-tel'>电话：{{item.phone}}</text>
+    <text class='shop-addres sell'>地址：{{item.address}}</text>
+    <text class='shop-time ell'>营业时间：{{item.businessHours}}</text>
+  </view>
+  <!--星星评级-->
+  <view class="shop-star">
+    <view class='star-after'>★★★★★</view>
+    <view class='star-before' style="width:{{ item.score }}%;">★★★★★</view>
+  </view>
+</view>
+<!--更多加载-->
+<view class="loadmore loading" wx:if="{{ hasMore }}">正在加载...</view>
+<view class="loadmore" wx:else>你已经到达我的底线了</view>
